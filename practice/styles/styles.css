@@ -9,18 +9,26 @@
 nav {
   text-align: center;
   background-color: #4682b4;
-  padding: 10px;
+  padding: 25px;
   }
 a {
   color: white;
   margin: 40px;
+  padding: 25px;
+}
+body{
+  margin: 0;
 }
 h1 {
   text-align: center;
   color: steelblue;
+  margin: 50px 0;
 }
 img {
-
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid steelblue;
 }
 p {
   padding: 10px;
@@ -34,6 +42,7 @@ footer {
   text-align: center;
   background-color: steelblue;
   color: white;
+  padding: 25px;
 }
 
 a:hover {

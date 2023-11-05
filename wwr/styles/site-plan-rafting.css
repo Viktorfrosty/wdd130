@@ -7,8 +7,8 @@ Fonts are separated by a & */
   /* change the values below to your colors from your palette */
   --primary-color: #01377A   ;
   --secondary-color: #A5A478 ;
-  --accent1-color: #EBEBEB;
-  --accent2-color: #794CB8;
+  --accent1-color: #794CB8;
+  --accent2-color: #EBEBEB;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Cinzel Decorative";
@@ -19,11 +19,11 @@ Fonts are separated by a & */
   --headline-color-on-color: #EBEBEB; /* headlines on a colored background */ 
   --paragraph-color-on-white: #01377A; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #EBEBEB; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #01377A  ;
+  --paragraph-background-color: #A5A478  ;
   --nav-link-color: #EBEBEB;
-  --nav-background-color: #A5A478;
+  --nav-background-color: #01377A;
   --nav-hover-link-color: #EBEBEB;
-  --nav-hover-background-color: #01377A;
+  --nav-hover-background-color: #794CB8;
 }
 
 

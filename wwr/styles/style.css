@@ -187,7 +187,83 @@ footer .social img{
     grid-column: 8/10;
     grid-row: 2/3;
 }
+/*
+----------------------------------------------------------------------------
 
+DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+----------------------------------------------------------------------------
+*/
+
+.faq-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    margin-bottom: -100px;
+}
+.grid-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.l-grid, .r-grid{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+.l-grid-bkg, .r-grid-bkg{
+    background-color: #01377A;
+    box-shadow: 5px 5px 10px #6f7364;
+    border-radius: 25px;
+    width: auto;
+    height: auto;
+    grid-row: 4/10;
+    z-index: -1;
+}
+.l-grid-bkg{
+    grid-column: 5/16;
+}
+.r-grid-bkg{
+    grid-column: 2/13;
+}
+.l-grid-img, .r-grid-img{
+    border: 10px solid #A5A478;
+    transition: transform .75s;
+    width: auto;
+    height: auto;
+    grid-row: 3/6;
+}
+.l-grid-img{
+    grid-column: 2/6;
+}
+.r-grid-img{
+    grid-column: 12/16;
+}
+.l-grid-img:hover, .r-grid-img:hover{
+    transform: scale(1.25);
+}
+.l-grid-ttl, .r-grid-ttl{
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+    color: #EBEBEB;
+    font-size: 1em;
+    font-weight: bold;
+    grid-row: 4/5;
+}
+.l-grid-ttl, .l-grid-txt{
+    grid-column: 7/15;
+}
+.r-grid-ttl,.r-grid-txt{
+    grid-column: 3/11;
+}
+.l-grid-txt, .r-grid-txt{
+    align-self: center;
+    justify-self: center;
+    text-align: justify;
+    color: #EBEBEB;
+    font-size: 0.9em;
+    grid-row: 5/9;
+}
 /*do not add anything after this line*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

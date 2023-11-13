@@ -187,6 +187,7 @@ footer .social img{
     grid-column: 8/10;
     grid-row: 2/3;
 }
+
 /*
 ----------------------------------------------------------------------------
 
@@ -264,6 +265,29 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     font-size: 0.9em;
     grid-row: 5/9;
 }
+
+/*
+----------------------------------------------------------------------------
+
+DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+----------------------------------------------------------------------------
+*/
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 /*do not add anything after this line*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

@@ -349,8 +349,7 @@ form {
     bottom: 0;*/
     padding: .5em;
     /* make this element invisible until we are ready for it
-    display: none;*/ 
-    margin-bottom: -200px;     
+    display: none;*/     
 }
 
 .moveDown {

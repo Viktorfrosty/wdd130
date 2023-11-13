@@ -277,11 +277,13 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 400px;
+    width: 500px;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #ccc;
+    border: 5px solid #01377A;
     border-radius: 1em;
+    color: #EBEBEB; /* test */
+    background-color: #01377A;
   }
   
   ul {
@@ -305,20 +307,23 @@ form {
   textarea {
     /* To make sure that all text fields have the same font settings
        By default, textareas have a monospace font */
-    font: 1em sans-serif;
+    /*font: 1em sans-serif;*/
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1em;
+    color: #01377A;
   
     /* Uniform text field size */
-    width: 300px;
+    width: 400px;
     box-sizing: border-box;
   
     /* Match form field borders */
-    border: 1px solid #999;
+    border: 1px solid #EBEBEB;
   }
   
   input:focus,
   textarea:focus {
     /* Additional highlight for focused elements */
-    border-color: #000;
+    border-color: #794CB8;
   }
   
   textarea {
@@ -331,14 +336,17 @@ form {
   
   .button {
     /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
+    /*padding-left: 90px;  same size as the label elements */
+    text-align: center;
   }
   
+/*
   button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
+    This extra margin represent roughly the same space as the space
+       between the labels and their text fields
     margin-left: 0.5em;
   }
+*/
 
 #feedback {
     /*background-color: antiquewhite;
@@ -347,15 +355,19 @@ form {
     left: 0;
     right: 0;
     bottom: 0;*/
-    padding: .5em;
+    padding: .75em;
     /* make this element invisible until we are ready for it
-    display: none;*/     
+    display: none;*/  
+    align-self: center;
+    justify-self: center;
+    /*margin-top: 200px; test */
+    /*margin-bottom: -100px; test */
 }
-
+/*
 .moveDown {
     margin-top: 3em;
 }
-
+*/
 /*do not add anything after this line*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {

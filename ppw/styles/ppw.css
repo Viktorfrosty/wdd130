@@ -128,8 +128,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
-    margin-bottom: 150px;/*temptative*/
 }
 
 /*
@@ -167,6 +165,16 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     width: 200px;
     height: auto;
     grid-row: 2/4;
+    border-top: 5px solid #960508;
+    border-bottom: 5px solid #960508;
+}
+
+.home-left-block img {
+    border-left: 5px solid #960508;
+}
+
+.home-right-block img {
+    border-right: 5px solid #960508;
 }
 
 .home-left-block-img, .home-left-block-btn-bkg, .home-left-block-btn-txt {
@@ -205,11 +213,6 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     border-radius: 20px;
 }
 
-.home-left-block-btn-bkg:hover, .home-right-block-btn-bkg:hover {
-    background-color: #E5E5E5;
-    color: #151515;
-}
-
 .home-left-block-txt,.home-left-block-btn-txt, .home-right-block-txt,.home-right-block-btn-txt {
     align-self: center;
     justify-self: center;
@@ -235,6 +238,11 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     font-size: 1.5em;
     grid-row: 5/6;
     z-index: 1;
+    transition: transform .5s;
+}
+
+.home-left-block-btn-txt:hover, .home-right-block-btn-txt:hover {
+    transform: scale(1.25);
 }
 
 /*

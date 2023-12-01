@@ -275,7 +275,8 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 .showcase-left-block, .showcase-right-block {
     display: grid;
-    grid-template: repeat(9, 1fr)/repeat(15, 1fr);
+    grid-template: repeat(8, 1fr)/repeat(15, 1fr);
+    margin-bottom: 100px;
 }
 
 .showcase-left-block-txt, .showcase-right-block-txt {

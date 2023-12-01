@@ -263,6 +263,69 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     grid-row: 2/3;
 }
 
+.showcase-left-block-bkg, .showcase-right-block-bkg {
+    background-color: #960508;
+    height: auto;
+    width: auto;
+    grid-column: 2/15;
+    grid-row: 3/10;
+    z-index: -1;
+}
+
+.showcase-left-block, .showcase-right-block {
+    display: grid;
+    grid-template: repeat(10, 1fr)/repeat(15, 1fr);
+}
+
+.showcase-left-block-txt, .showcase-right-block-txt {
+    grid-row: 4/9;
+    text-align: justify;
+    margin-top: -1px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 1.15em;
+}
+
+.showcase-left-block-txt {
+    grid-column: 2/9;
+}
+
+.showcase-right-block-txt {
+    grid-column: 8/15;
+}
+
+.showcase-left-block-ttl-img, .showcase-right-block-ttl-img {
+    width: 600px;
+    height: auto;
+    grid-row: 2/4;
+    justify-self: center;
+}
+
+.showcase-left-block-ttl-img {
+    grid-column: 2/10;
+}
+
+.showcase-right-block-ttl-img {
+    grid-column: 7/15;
+}
+
+.showcase-left-block-inr-img, .showcase-right-block-inr-img {
+    width: auto;
+    height: 500px;
+    grid-row: 4/9;
+    justify-self: center;
+    align-self: center;
+}
+
+.showcase-left-block-inr-img {
+    grid-column: 9/15;
+}
+
+.showcase-right-block-inr-img {
+    grid-column: 2/8;
+}
+
+
 /*
 ----------------------------------------------------------------------------
 
@@ -280,3 +343,4 @@ DO NOT ALTER ANYTHING BELOW THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------------------------
 */
+

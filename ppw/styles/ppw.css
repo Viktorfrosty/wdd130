@@ -269,6 +269,7 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     width: auto;
     grid-column: 2/15;
     grid-row: 3/8;
+    border-radius: 25px;
     z-index: -1;
 }
 
@@ -301,6 +302,7 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     height: auto;
     grid-row: 2/4;
     justify-self: center;
+    border-radius: 25px;
 }
 
 .showcase-left-block-ttl-img {
@@ -318,6 +320,7 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     grid-row: 3/8;
     justify-self: center;
     align-self: center;
+    border-radius: 25px;
     transition: .5s;
 }
 

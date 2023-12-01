@@ -310,7 +310,7 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     margin-top: -30px;
 }
 
-.showcase-left-block-inr-img, .showcase-right-block-inr-img {
+#showcase-left-block-inr-img, #showcase-right-block-inr-img {
     width: auto;
     height: 450px;
     grid-row: 4/9;
@@ -319,15 +319,15 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     transition: .5s;
 }
 
-.showcase-left-block-inr-img:hover, .showcase-right-block-inr-img:hover {
+#showcase-left-block-inr-img:hover, #showcase-right-block-inr-img:hover {
     transform: scale(1.05);
 }
 
-.showcase-left-block-inr-img {
+#showcase-left-block-inr-img {
     grid-column: 9/15;
 }
 
-.showcase-right-block-inr-img {
+#showcase-right-block-inr-img {
     grid-column: 2/8;
 }
 
@@ -349,4 +349,74 @@ DO NOT ALTER ANYTHING BELOW THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ----------------------------------------------------------------------------
 */
+ 
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 150px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
 
+/* Modal Content (Image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 500px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+margin: auto;
+display: block;
+width: 65%;
+max-width: 425px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+from {transform:scale(0)}
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 175px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+    width: 100%;
+}
+}

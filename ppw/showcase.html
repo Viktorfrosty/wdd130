@@ -26,7 +26,7 @@
         <div id="info-blocks">
             <div class="showcase-left-block">
                 <img class="showcase-left-block-ttl-img" src="images/mysteryverse_banner.png" alt="mysteryverse banner">
-                <img class="showcase-left-block-inr-img" src="images/misterioverse.png" alt="mysteryverse logo">
+                <img id="showcase-left-block-inr-img" src="images/misterioverse.png" alt="mysteryverse logo">
                 <p class="showcase-left-block-txt">
                     Mysteryverse is a captivating roguelike deck builder game that blends elements of magic and mystery in a unique setting that combines the medieval and modern eras. In this game, you could be a mage or a non-mage navigating in a world where the mundane and the magic collide. The environment is a surreal blend of medieval castles and modern cityscapes, where knights in shining armor coexist with soldiers in tactical armor, and ancient spells meet modern technology. Your primary weapon is a deck of cards, each imbued with spells or abilities. As you progress through the game, you’ll have the opportunity to collect and upgrade these cards, building a deck that suits your playstyle. The game’s roguelike nature means that each run is different. The layout of the world, the enemies you encounter, and the cards you can collect change with each playthrough, offering endless replayability. The game’s mystery element comes into play as you uncover the secrets of the world’s past. Unravel the threads of time, discover hidden truths, and make choices that will shape the flow of the history. With its gameplay, minimalistic visuals, and lore, Mysteryverse offers an immersive gaming experience that will challenge and delight fans of deck builders and roguelikes alike. Whether you’re casting spells in a medieval-like dungeon or hacking systems in a modern metropolis, every moment is filled with magic and mystery.
                 </p>
@@ -34,7 +34,7 @@
             </div>
             <div class="showcase-right-block">
                 <img class="showcase-right-block-ttl-img" src="images/ee_logo_2.png" alt="ee banner">
-                <img class="showcase-right-block-inr-img" src="images/ee_logo_1.png" alt="ee logo">
+                <img id="showcase-right-block-inr-img" src="images/ee_logo_1.png" alt="ee logo">
                 <p class="showcase-right-block-txt">
                     Enclave Epsilon is a podcast for all things tech, vehicle mechanics, and video games. In this podcast, we delve into the world of technological innovation, exploring the latest breakthroughs in everything from software and Hardware. We also dive deep into the video game industry, bringing you news and reviews of the latest games, interviews with developers, and insider insights into the gaming world. The target audience is tech enthusiasts, gamers, and people who want to stay informed. Enclave Epsilon is a good podcast for people of all ages. The program is aired two times a week and is centered on exciting discussions, expert opinions, and the latest news about these topics.
                 </p>
@@ -62,5 +62,45 @@
             <a href="https://www.flaticon.com/free-icons/tweet" target="_blank">Tweet icons created by Freepik - Flaticon.</a>
         </p>
     </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById("showcase-left-block-inr-img");
+        var img2 = document.getElementById("showcase-right-block-inr-img");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+        }
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+  </div>
 </body>
 </html>

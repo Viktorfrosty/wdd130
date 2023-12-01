@@ -268,30 +268,32 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     height: auto;
     width: auto;
     grid-column: 2/15;
-    grid-row: 3/10;
+    grid-row: 3/8;
     z-index: -1;
 }
 
 .showcase-left-block, .showcase-right-block {
     display: grid;
-    grid-template: repeat(10, 1fr)/repeat(15, 1fr);
+    grid-template: repeat(9, 1fr)/repeat(15, 1fr);
 }
 
 .showcase-left-block-txt, .showcase-right-block-txt {
-    grid-row: 4/9;
+    grid-row: 3/8;
     text-align: justify;
     margin-top: 50px;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 1.15em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.1em;
 }
 
 .showcase-left-block-txt {
     grid-column: 2/9;
+    padding-left: 70px;
 }
 
 .showcase-right-block-txt {
     grid-column: 8/15;
+    padding-right: 70px;
 }
 
 .showcase-left-block-ttl-img, .showcase-right-block-ttl-img {
@@ -312,15 +314,15 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 #showcase-left-block-inr-img, #showcase-right-block-inr-img {
     width: auto;
-    height: 450px;
-    grid-row: 4/9;
+    height: 400px;
+    grid-row: 3/8;
     justify-self: center;
     align-self: center;
     transition: .5s;
 }
 
 #showcase-left-block-inr-img:hover, #showcase-right-block-inr-img:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 
 #showcase-left-block-inr-img {

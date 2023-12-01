@@ -286,6 +286,7 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 1em;
+    align-self: center;
 }
 
 .showcase-left-block-txt {

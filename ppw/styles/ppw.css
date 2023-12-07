@@ -347,7 +347,27 @@ DO NOT ALTER ANYTHING ABOVE THIS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ----------------------------------------------------------------------------
 */
 
+.about-main-block, .about-slave-block {
+    display: grid;
+    grid-template: repeat(15, 1fr) / repeat(7, 1fr);
+}
 
+.about-main-block-bkg, .about-slave-block-bkg {
+    background-color: #960508;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    grid-row: 2/7;
+}
+
+.about-main-block-bkg {
+    grid-column: 2/15;
+}
+
+.about-main-block-txt {
+    grid-row: 3/7;
+    grid-column: 2/6;
+}
 
 /*
 ----------------------------------------------------------------------------

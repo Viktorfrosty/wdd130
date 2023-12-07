@@ -25,7 +25,7 @@
         <div id="info-blocks">
             <div class="about-main-block">
                 <div class="about-main-block-bkg"></div>
-                <img class="about-main-block-img" src="images/about_me_2.jpg" alt="a person in the middle of nowhere">
+                <img id="about-main-block-img" src="images/about_me_2.jpg" alt="Me in the middle of an adventure.">
                 <h1 class="about-main-block-ttl">
                     Hi, thank you so much for coming.
                 </h1>
@@ -33,9 +33,9 @@
                     My name is Victor Malpica. I describe myself as a part-time adventurer and a full-time student. Years ago, I was part of an excursion team, and during my time with that group, I fell in love with nature, animals, and trekking. The majority of my ex-team members were students in the computer science area. I owe them much, especially my earliest interactions with video game programming and software development. Some people call me the jack of all trades because I like to learn new things and put them into practice as soon I feel comfortable with the information I gather through various credible sources; that is why I am very skilled with pastry. Recently, I left behind my survival gear and started baking cakes and doing pastries for a living. In my free time, I program modifications of games for personal use; these side projects have been useful for me because I am honing my programming skills and expanding my knowledge about video game engines.
                 </p>
             </div>
-            <div class="about-slave-block-">
+            <div class="about-slave-block">
                 <div class="about-slave-block-bkg"></div>
-                <img class="about-slave-block-img" src="images/byu.png" alt="a person in the middle of nowhere">
+                <img class="about-slave-block-img" src="images/byu.png" alt="BYU Logo">
                 <p class="about-slave-block-txt">
                     Nowadays, I am a part of the B.Y.U. Idaho online study program, where I am learning and honing my programming skills to get a degree in Software Development and be part of the workforce that makes it possible for everyone to access the sea of possibilities and innovations that characterize the applied technologies area.
                 </p>
@@ -62,5 +62,39 @@
             <a href="https://www.flaticon.com/free-icons/tweet" target="_blank">Tweet icons created by Freepik - Flaticon.</a>
         </p>
     </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+      
+        <!-- Modal Content (The Image) -->
+        <img src="#" class="modal-content" id="img01" alt="">
+      
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img1 = document.getElementById("about-main-block-img");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img1.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+            </script>
+      </div>
 </body>
 </html>
